@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sci-Fi Landing Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: radial-gradient(ellipse at center, #21273a 0%, #11131a 100%);
+      color: #00fff7;
+      font-family: 'Orbitron', sans-serif;
+      overflow: hidden;
+    }
+    .glow {
+      text-shadow: 0 0 8px #00fff7, 0 0 16px #00fff7;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    h1 {
+      font-size: 4rem;
+      letter-spacing: .1em;
+      margin-bottom: .5em;
+    }
+    p {
+      font-size: 1.5rem;
+      color: #f2f2f2;
+      text-shadow: 0 0 4px #00fff7;
+      margin-bottom: 2em;
+    }
+    .button {
+      background: linear-gradient(90deg,#00fff7 0%, #0e63f7 100%);
+      color: #11131a;
+      border: none;
+      border-radius: 25px;
+      padding: 1em 2.5em;
+      font-size: 1.2rem;
+      font-family: inherit;
+      cursor: pointer;
+      box-shadow: 0 0 20px #00fff7;
+      transition: background 0.3s, color 0.3s;
+    }
+    .button:hover {
+      background: #11131a;
+      color: #00fff7;
+      border: 2px solid #00fff7;
+    }
+    .neon-bar {
+      width: 400px;
+      height: 8px;
+      background: linear-gradient(90deg, #0e63f7 0%, #00fff7 100%);
+      box-shadow: 0 0 24px #00fff7;
+      border-radius: 5px;
+      margin: 2em 0;
+      animation: flicker 2s infinite alternate;
+    }
+    @keyframes flicker {
+      0% { opacity: 0.8; }
+      100% { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="glow">GALAXY PORTAL</h1>
+    <div class="neon-bar"></div>
+    <p>Step into the future. Explore new worlds and connect with technology beyond imagination.</p>
+    <button class="button">Enter Portal</button>
+  </div>
+</body>
+</html>
